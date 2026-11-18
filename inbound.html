@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foodservice Review Inbox</title>
+<meta name="description" content="Foodservice Review Inbox receives completed product classification review workbooks from authorised reviewers for a privately operated foodservice intelligence platform.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="inbound.html">Foodservice Review Inbox</a>
+  <nav>
+    <a href="inbound.html" aria-current="page">Home</a>
+    <a href="inbound-privacy.html">Privacy</a>
+    <a href="#terms">Terms</a>
+  </nav>
+</header>
+<main>
+  <h1>Foodservice Review Inbox</h1>
+  <p class="lede">The review return component of a privately operated foodservice competitor intelligence platform.</p>
+
+  <h2>What the platform does</h2>
+  <p>The platform collects publicly available product catalogue information published by foodservice suppliers and organises it so that products can be compared and classified consistently. Authorised reviewers receive review workbooks by email and return them with their decisions.</p>
+
+  <h2>What Foodservice Review Inbox does</h2>
+  <p>Foodservice Review Inbox finds completed review workbooks that reviewers have returned by email to the operator's own dedicated Gmail account. For each returned email, it keeps an exact copy of the original message and its workbook attachment so that the review decisions can be checked against the workbook that was issued.</p>
+  <p>It uses Google's Gmail API with a single permission, <code>https://www.googleapis.com/auth/gmail.readonly</code>, granted only by that dedicated account. The application searches only for messages with a spreadsheet attachment and retrieves only those messages. It cannot send, modify, label, move or delete email, and it does not request access to any other Google account or service.</p>
+  <p>Returned decisions are never applied automatically. The operator checks each returned workbook and confirms the reviewer's identity independently before any decision is used.</p>
+  <p>This application is separate from <a href="./">Foodservice Email Bridge</a>, which sends the review workbooks and cannot read email.</p>
+
+  <h2>Who it is for</h2>
+  <p>This is a private, internal tool. It is not offered to the public, there is no sign-up, and it is authorised only by the operator's own Gmail account.</p>
+
+  <h2 id="terms">Terms of use</h2>
+  <p class="meta">Effective 18 November 2026</p>
+  <p>Foodservice Review Inbox (“the application”) is a privately operated tool for receiving review workbooks from reviewers authorised by its operator. It is not a public service and is not available for sign-up. Only people invited by the operator may act as reviewers, and returned workbooks are used for the review process only.</p>
+  <p>The application is provided as is. The operator may change, suspend or stop it at any time and does not guarantee that a returned workbook will be processed on any particular schedule. These terms may be updated; the current version will always be published on this page with its effective date. How information is handled is described in the <a href="inbound-privacy.html">Privacy Policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this application can be sent to <a href="mailto:foodservice.intelligence@gmail.com">foodservice.intelligence@gmail.com</a>.</p>
+</main>
+<footer>
+  <a href="inbound-privacy.html">Privacy Policy</a> · <a href="#terms">Terms of use</a> · <a href="mailto:foodservice.intelligence@gmail.com">foodservice.intelligence@gmail.com</a>
+</footer>
+</body>
+</html>
